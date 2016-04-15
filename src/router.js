@@ -5,8 +5,19 @@ import HomePage from './pages/home'
 import CategoriesPage from './pages/categories'
 import BrandsPage from './pages/brands'
 import SpecialsPage from './pages/specials'
+import Layout from './layout'
 
 export default Router.extend({
+	renderPage (page) {
+			page = (
+			<Layout>
+				{page}
+			</Layout>
+			)
+
+		React.render(page, document.body)
+	},
+
 	routes: {
 		'' : 'home',
 		'categories' : 'categories',
@@ -15,18 +26,18 @@ export default Router.extend({
 	},
 
 	home () {
-		React.render(<HomePage/>, document.body)
+		this.renderPage(<HomePage/>)
 	},
 
 	categories () {
-		React.render(<CategoriesPage/>, document.body)
+		this.renderPage(<CategoriesPage/>)
 	},
 
 	brands () {
-		React.render(<BrandsPage/>, document.body)
+		this.renderPage(<BrandsPage/>)
 	},
 
 	specials () {
-		React.render(<SpecialsPage/>, document.body)
+		this.renderPage(<SpecialsPage/>)
 	}
 })
