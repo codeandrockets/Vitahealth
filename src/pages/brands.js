@@ -4,9 +4,9 @@ import NavHelper from '../components/nav-helper'
 export default React.createClass({
 	render () {
 		return (
-			<NavHelper>
+			<div>
 				<h2>Brands</h2>
-			</NavHelper>
+			</div>
 		)
 	}
 })
