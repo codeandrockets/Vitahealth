@@ -7,6 +7,7 @@ import BrandsPage from './pages/brands'
 import SpecialsPage from './pages/specials'
 import CartPage from './pages/cart'
 import Layout from './layout'
+import Moltin from './moltin'
 
 export default Router.extend({
 	renderPage (page) {
@@ -24,7 +25,8 @@ export default Router.extend({
 		'categories' : 'categories',
 		'brands' : 'brands',
 		'specials' : 'specials',
-		'cart' : 'cart'
+		'cart' : 'cart',
+		'moltin' : 'moltin'
 	},
 
 	home () {
@@ -45,5 +47,9 @@ export default Router.extend({
 
 	cart () {
 		this.renderPage(<CartPage/>)
+	},
+
+	moltin () {
+		this.renderPage(<Moltin/>)
 	}
 })

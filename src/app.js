@@ -1,3 +1,5 @@
+<script src="https://js.moltin.com/v1"></script>
+
 import React from 'react'
 import Router from './router'
 import styles from './styles/main.styl'
