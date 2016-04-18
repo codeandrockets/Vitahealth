@@ -14,6 +14,7 @@ export default React.createClass({
 							<li><a href="/categories">Categories</a></li>
 							<li><a href="/brands">Brands</a></li>
 							<li><a href="/specials">Specials</a></li>
+							<li><a href="/cart">Cart</a></li>
 						</ul>
 					</nav>
 					<div>

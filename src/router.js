@@ -5,6 +5,7 @@ import HomePage from './pages/home'
 import CategoriesPage from './pages/categories'
 import BrandsPage from './pages/brands'
 import SpecialsPage from './pages/specials'
+import CartPage from './pages/cart'
 import Layout from './layout'
 
 export default Router.extend({
@@ -22,7 +23,8 @@ export default Router.extend({
 		'' : 'home',
 		'categories' : 'categories',
 		'brands' : 'brands',
-		'specials' : 'specials'
+		'specials' : 'specials',
+		'cart' : 'cart'
 	},
 
 	home () {
@@ -39,5 +41,9 @@ export default Router.extend({
 
 	specials () {
 		this.renderPage(<SpecialsPage/>)
+	},
+
+	cart () {
+		this.renderPage(<CartPage/>)
 	}
 })
