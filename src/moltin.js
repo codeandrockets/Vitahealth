@@ -1,13 +1,10 @@
-import React from 'react'
 
-export default React.createClass({
-	render () {
-		return <div>
-			< Steven />
- 		</div>
+
+
+
+  var moltin = new Moltin({publicId: 'KSkSai1URaQH3xMyTAV86xS6TZoG371srasglQ69iU'});
+  moltin.Authenticate(function() {
+    
+  });
+
 	
-	}	
-})
-
-
-
