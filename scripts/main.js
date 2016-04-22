@@ -17,6 +17,10 @@ var base = Rebase.createClass('https://app-of-the-day.firebaseio.com/');
 
 var Catalyst = require('react-catalyst');
 
+//**************************** IMPORT COMPONENTS *************************************//
+
+import NotFound from './components/NotFund';
+
 //App *********************  FRONT PAGE  *********************************************//
 var App = React.createClass({
 	mixins : [Catalyst.LinkedStateMixin],
