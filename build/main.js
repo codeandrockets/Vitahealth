@@ -24734,7 +24734,7 @@ var AddProductForm = React.createClass({
 				React.createElement(
 					'option',
 					{ value: 'available' },
-					'Fresh!'
+					'Available!'
 				),
 				React.createElement(
 					'option',
@@ -24807,7 +24807,7 @@ var Order = React.createClass({
 			'li',
 			{ key: key },
 			count,
-			'lbs',
+			'x',
 			product.name,
 			React.createElement(
 				'span',
