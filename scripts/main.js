@@ -82,11 +82,11 @@ var App = React.createClass({
 			<div className="">
 				<div className="">
 					<Header tagline="Keeping Kiwis Healthy"/>
+					<Navigation />
 					<ul className="list-of-products">
 						{Object.keys(this.state.products).map(this.renderProduct)}
 					</ul>
 				</div>
-				<Navigation />
 				<Order products={this.state.products} order={this.state.order} removeFromOrder={this.removeFromOrder} />
 				<Inventory addProduct={this.addProduct} products={this.state.products} linkState={this.linkState} removeProduct={this.removeProduct}/>
 			</div>
@@ -148,7 +148,7 @@ var AddProductForm = React.createClass({
 				<input type="text" ref="name" placeholder="Product Name"/>
 				<input type="text" ref="price" placeholder="Product Price" />
 				<select ref="status">
-					<option value="available">Fresh!</option>
+					<option value="available">Available!</option>
 					<option value="unavailable">Sold Out!</option>
 				</select>
 				<textarea type="text" ref="desc" placeholder="Desc"></textarea>
@@ -186,7 +186,7 @@ var Order = React.createClass({
 		}
 
 		return (<li key={key}>
-					{count}lbs
+					{count}x
 					{product.name}
 					<span className="price">{h.formatPrice(count * product.price)}</span>{removeButton}
 				</li>)
