@@ -11,7 +11,7 @@ var Product = React.createClass({
 		var isAvailable = (details.status === 'available' ? true : false);
 		var buttonText = (isAvailable ? 'Add To Order' : 'Sold Out!');
 		return (
-			<li className="menu-product">
+			<li className="product">
 				<img src={this.props.details.image} alt="" />
 				<h3 className="product-name">
 					{details.name}

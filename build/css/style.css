@@ -5,3 +5,9 @@
 img {
   height: 100px;
 }
+p {
+  color: #00f;
+}
+.product {
+  display: none;
+}

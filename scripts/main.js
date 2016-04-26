@@ -124,13 +124,7 @@ var Inventory = React.createClass({
 				<button onClick={this.props.removeProduct.bind(null, key)}>Remove Product</button>
 			</div>
 		)
-	},
-	render : function() {
-		if(!this.state.userId) {
-			return (
-				{this.renderLogin()}
-			)
-		}
+	}
 		return (
 			<div>
 				<h2>Inventory</h2>
@@ -157,7 +151,7 @@ var Navigation = React.createClass({
 	}
 });
 
-//Not Found Component 
+//*************    Not Found Component ***************************************************/ 
 
 var NotFound = React.createClass({
 	render : function() {
